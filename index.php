@@ -4,47 +4,47 @@
 echo $number; // Mostrare la variabile */
 
 //$ Esempi di identificatori validi
-/*
-$nome;
+
+/* $nome;
 $_età;
-$indirizzo_1;
-$NumeroCivico;
-*/
+$indirizzo_di_casa;
+$numeroCivico; */
+
 
 
 //$ Riassegnazione di una variabile
 /* $var = -3.4;
 echo $var; // -3.4
 $var = 'Ciao';
-echo $var; // Ciao
- */
+echo $var; // Ciao */
+
 
 //$ Assegnamento per valore o riferimento
 
 //* Per valore
 /* $name1 = 'Matteo'; // Matteo
 $name2 = $name1; // Matteo
-// echo $name1 . '<br>' . $name2 . '<br>';
+//echo $name1 . '<br>' . $name2 . '<br>';
 // Riassegnazione
 $name1 = 'Paolo';
-echo $name1, $name2; //Matteo Paolo */
+echo  $name1 . '<br>' . $name2 . '<br>'; //Matteo Paolo */
 
 
 //* Per riferimento
 /* $name1 = 'Matteo'; // Matteo
 $name2 = &$name1; // Matteo
-// echo $name1 . '<br>' . $name2 . '<br>';
+//echo $name1 . '<br>' . $name2 . '<br>';
 // Riassegnazione
 $name1 = 'Paolo';
-echo $name1, $name2; //Paolo Paolo
- */
+echo $name1 . '<br>' . $name2 . '<br>'; //Paolo Paolo */
+
 
 
 //% Costanti
 /* define("NOME_COSTANTE", "Hello");
 const NOME_COSTANTE_2 = " World";
 
-echo NOME_COSTANTE, NOME_COSTANTE_2; */
+echo NOME_COSTANTE .'<br>'. NOME_COSTANTE_2; */
 // Hello World
 
 //NOME_COSTANTE_2 = " Ciao";
@@ -55,9 +55,11 @@ const CONSTANTE2 = 10; // OK */
 
 //$ Costanti PHP built-in
 //echo PHP_VERSION; // 8.2.4
+//echo PHP_INT_MAX;
 
 //* Costanti magiche
 //echo __DIR__ ; //C:\User\...
+//echo __FILE__;
 
 
 //% Scope delle variabili
@@ -66,8 +68,10 @@ const CONSTANTE2 = 10; // OK */
 /* $x = 5; // Variabile globale
 function test()
 {
+    //$x = 'ciao';
     echo $x; // Errore
 }
+//echo $x;
 test(); */
 
 //* global
