@@ -41,6 +41,7 @@ echo $name1 . '<br>' . $name2 . '<br>'; //Paolo Paolo */
 
 
 //% Costanti
+//* define
 /* define("NOME_COSTANTE", "Hello");
 const NOME_COSTANTE_2 = " World";
 
@@ -49,6 +50,7 @@ echo NOME_COSTANTE .'<br>'. NOME_COSTANTE_2; */
 
 //NOME_COSTANTE_2 = " Ciao";
 
+//* const
 /* const COSTANTE; // Errore
 const CONSTANTE2 = 10; // OK */
 
@@ -57,9 +59,24 @@ const CONSTANTE2 = 10; // OK */
 //echo PHP_VERSION; // 8.2.4
 //echo PHP_INT_MAX;
 
+
 //* Costanti magiche
 //echo __DIR__ ; //C:\User\...
 //echo __FILE__;
+
+
+//$ Controllare le costanti
+/*
+define("COSTANTE", "Hello world.");
+if (defined("COSTANTE")) {
+    echo COSTANTE;  // Hello world.
+} else {
+    echo "COSTANTE non è stata definita.";
+} */
+
+
+
+
 
 
 //% Scope delle variabili
@@ -93,7 +110,7 @@ test(); // 5
 echo $x; // Errore */
 
 
-//$ Statico
+//$ Static
 /* function test(){
     static $x = 0;
     echo $x;
